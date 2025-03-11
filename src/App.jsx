@@ -13,7 +13,7 @@ import banner_kid from './assets/banner_kids.png';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolioecommerce">
           <Navbar />
         <Routes>
           <Route exact path='/' element={<Shop />} />
