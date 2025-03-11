@@ -1,4 +1,4 @@
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { Routes,Route } from 'react-router-dom';
 import Navbar from './component/Navbar';
 import Shop from './pages/Shop';
 import Category from './pages/Category';
@@ -13,7 +13,6 @@ import banner_kid from './assets/banner_kids.png';
 function App() {
   return (
     <div>
-      <BrowserRouter basename="/portfolioecommerce">
           <Navbar />
         <Routes>
           <Route exact path='/' element={<Shop />} />
@@ -27,7 +26,6 @@ function App() {
           <Route exact path='loginSign' element={<LoginSign />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
     </div>
   );
 }
