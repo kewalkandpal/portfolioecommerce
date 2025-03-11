@@ -1,0 +1,40 @@
+.releated_product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.releated_product h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: #171717;
+}
+.releated_product hr{
+    width: 180px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #252525;
+}
+.Product_item{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Responsive design */
+
+/* For mobile devices */
+
+@media only screen and (max-width:480px){
+    .releated_product h1{
+        font-size: 18px;
+    }
+    .releated_product hr{
+        width: 100px;
+        height: 2px;
+        border: 0;
+    }
+}

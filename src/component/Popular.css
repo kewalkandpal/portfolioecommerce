@@ -1,0 +1,55 @@
+.popular{
+  margin-top: 45px;
+}
+.popular h1{
+  text-align: center;
+  color: #171717;
+  font-weight: 600;
+  font-size: 35px;
+}
+.popular hr{
+    width: 200px;
+    height: 3px;
+    margin: auto;
+    background-color: #252525;
+}
+.popular .popular_items{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+@media only screen and (max-width:768px){
+  .popular{
+    margin-top: 30px;
+  }
+  .popular h1{
+    font-size: 25px;
+  }
+  .popular hr{
+    width: 120px;
+    height: 2px;
+    border: 0;
+  }
+}
+
+
+@media only screen and (max-width:480px){
+  .popular{
+    margin-top: 22px;
+  }
+  .popular h1{
+    font-size: 18px;
+  }
+  .popular hr{
+    width: 100px;
+    height: 2px;
+    border: 0;
+}
+.popular .popular_items{
+  margin-top: 22px;
+}
+}

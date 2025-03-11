@@ -1,0 +1,119 @@
+.offer{
+    width: 90%;
+    height: 60vh;
+    background: linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%);
+    display: flex;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px;
+    margin-top: 45px;
+}
+.offer .offer_left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.offer_left h1{
+    font-size: 52px;
+    font-weight: 600;
+    color: #171717;
+}
+.offer_left p{
+    font-size: 26px;
+    font-weight: 600;
+    color: #171717;
+}
+.offer_left button{
+    width: 200px;
+    height: 40px;
+    background-color: #eb423f;
+    color: white;
+    padding: 2px;
+    border-radius: 75px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.offer_right{
+    flex: 0.8;
+    object-fit: cover;
+}
+.offer_right img{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 2px 5px purple);
+}
+
+
+/* Responsive design */
+
+
+/* For ipads */
+
+@media only screen and (max-width:768px){
+    .offer{
+        width: 95%;
+        height: auto;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+    }
+    .offer .offer_left{
+        padding-left: 10px;
+    }
+    .offer_left h1{
+        font-size: 40px;
+    }
+    .offer_left p{
+        font-size: 22px;
+    }
+    .offer_left button{
+        width: 180px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .offer_right img{
+        padding-left: 10px;
+        width: 220px;
+        height: 100%;
+    }
+}
+
+/* For mobil devices */
+
+@media only screen and (max-width:480px){
+    .offer{
+        width: 85%;
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+    .offer .offer_left{
+        padding-left: 0px;
+        gap: 8px;
+    }
+    .offer_left h1{
+        font-size: 25px;
+    }
+    .offer_left p{
+        font-size: 18px;
+    }
+    .offer_left button{
+        width: 150px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .offer_right img{
+        width: 180px;
+        height: 100%;
+        object-fit: contain;
+        filter: drop-shadow(2px 2px 5px purple);
+    }
+}

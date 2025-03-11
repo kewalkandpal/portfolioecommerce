@@ -1,0 +1,28 @@
+.breadcrumb{
+    width: 100%;
+    padding: 20px 70px;
+}
+.breadcrumb p{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #5e5e5e;
+    text-transform: capitalize;
+}
+
+/* Responsive design */
+
+/* For mobile devices */
+
+@media only screen and (max-width:480px){
+    .breadcrumb{
+        padding: 10px 20px;
+    }
+    .breadcrumb p{
+        font-size: 13px;
+        flex-wrap: wrap;
+    }
+    .breadcrumb p img{
+        height: 12px;
+    }
+}

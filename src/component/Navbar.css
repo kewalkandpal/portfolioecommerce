@@ -1,0 +1,146 @@
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 1px #262626;
+    background-color: #fbb636;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.nav_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.nav_logo .nav_logo_img{
+    width: 40px;                          
+    cursor: pointer;
+}
+.nav_logo .nav_logo_name{
+    font-size: 22px;
+    font-weight: 600px;
+    color: #eb423f;
+    cursor: pointer;
+}
+.nav_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.nav_menu .nav_link{
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+.nav_menu .nav_link hr{
+    margin-top: 1px;
+    height: 2px;
+    border: none;
+    background-color: #eb423f;
+}
+.navbar .cart_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 2px 5px;
+}
+.navbar .cart_wrapper .nav_login_btn{
+    width:90px;
+    height: 33px;
+    border: 1.5px solid #eb423f;
+    color: black;
+    border-radius: 75px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.navbar .cart_wrapper .nav_login_btn:active{
+    background-color: #eb423f;
+}
+.navbar .cart_wrapper .cart_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.navbar .cart_wrapper .cart_icon .cart_icon_img{
+    width: 35px;
+    cursor: pointer;
+    color: #626262;
+    
+}
+.navbar .cart_wrapper .cart_icon .cart_total{
+    position: absolute;
+    width:22px;
+    height: 22px;
+    top:-5px;
+    right:-22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    font-weight:bolder;
+}
+.navbar .cart_wrapper .humbergar{ 
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #eb423f;
+    color: white;
+    display: none;
+    
+}
+
+/* Responsive navbar */
+
+@media only screen and (max-width:768px){  
+    .nav_menu.active{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+        gap: 20px;
+        position: fixed;
+        top: 80px;
+        left: 0px;
+        width: 30%;
+        height: 100%;
+        background-color: #eb423f;
+    }
+    .nav_menu.deActive{
+        display: none;
+    }
+    .nav_menu .nav_link hr{
+        background-color: #fbb636;
+    }
+    .navbar .cart_wrapper .humbergar{ 
+        display: block;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .navbar .cart_wrapper{
+        justify-content: flex-end;
+        gap: 10px;
+        padding: 0px;
+        width: 100%;
+    }
+    .navbar .cart_wrapper .humbergar{
+        margin-left: 18px;
+    }
+}

@@ -1,0 +1,47 @@
+.description{
+    margin: 30px 60px;
+}
+.description_btns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.description_btns button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.description_btns button:nth-child(2){
+    background-color: #fbfbfb;
+    color: #555;
+}
+.description .description_text{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #d0d0d0;
+    padding: 20px;
+}
+
+/* Responsive design */
+
+/* For mobile devices */
+
+@media only screen and (max-width:480px){
+    .description{
+        margin: 20px;
+    }
+    .description_btns button{
+        padding: 8px;
+        font-size: 12px;
+    }
+    .description .description_text{
+        padding: 15px;
+        font-size: 13px;
+    }
+}
