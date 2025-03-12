@@ -12,8 +12,8 @@ import banner_kid from './assets/banner_kids.png';
 
 function App() {
   return (
+    <Router basename="/portfolioecommerce/">
     <div>
-    <Router basename="/portfolioecommerce">
           <Navbar />
         <Routes>
           <Route exact path='/' element={<Shop />} />
@@ -27,8 +27,8 @@ function App() {
           <Route exact path='loginSign' element={<LoginSign />} />
         </Routes>
         <Footer />
-      </Router>
     </div>
+      </Router>
   );
 }
 
