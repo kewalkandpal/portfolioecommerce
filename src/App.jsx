@@ -16,7 +16,7 @@ function App() {
     <div>
           <Navbar />
         <Routes>
-          <Route exact path='/' element={<Shop />} />
+          <Route exact path='' element={<Shop />} />
           <Route exact path='/men' element={<Category banner={banner_men} category="men" />} />
           <Route exact path='/women' element={<Category banner={banner_women} category="women" />} />
           <Route exact path='/kids' element={<Category banner={banner_kid} category="kid" />} />
