@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import all_product from '../assets/all_product';
+import { toast } from 'react-toastify';
 
 const initialState = {
     product:all_product,
@@ -25,6 +26,7 @@ const productSlice = createSlice({
                 state.cart.push(action.payload);
             }
             localStorage.setItem("items",JSON.stringify(state.cart));
+            toast.success("Successfully Added To cart")
         },
         productQuantityIncrement:(state,action)=>{
             const updatedCardQuantity = state.cart.map((cur)=>{
@@ -52,6 +54,7 @@ const productSlice = createSlice({
             const updatedCart = state.cart.filter((cur)=> cur.id !== action.payload);
             state.cart = updatedCart; 
             localStorage.setItem("items",JSON.stringify(state.cart));
+            toast.error("Item Successfully Deleted")
         }
     }
 })

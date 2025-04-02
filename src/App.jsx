@@ -1,4 +1,4 @@
-import {BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import {Routes,Route } from 'react-router-dom';
 import Navbar from './component/Navbar';
 import Shop from './pages/Shop';
 import Category from './pages/Category';
@@ -9,6 +9,7 @@ import Footer from './component/Footer';
 import banner_men from './assets/banner_mens.png';
 import banner_women from './assets/banner_women.png';
 import banner_kid from './assets/banner_kids.png';
+import Page404 from './pages/Page404';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
             <Route path=':id' element={<Product />} />
           </Route>
           <Route exact path='/cart' element={<Cart />} />
-          <Route exact path='loginSign' element={<LoginSign />} />
+          <Route exact path='/loginSign' element={<LoginSign />} />
+          <Route exact path='*' element={<Page404 />} />
         </Routes>
         <Footer />
     </div>
